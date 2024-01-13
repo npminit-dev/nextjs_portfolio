@@ -4,7 +4,7 @@
 
 @layer components {
 
-  /* navigation */
+  /* ------ NAV -------- */
   .icon_appear {
     animation: menu_icon_appear 200ms ease-out forwards;
   }
@@ -88,4 +88,94 @@
       transform: translateY(-20px)
     }
   }
+
+  /* ----- HOME ----- */
+
+  .photo_appear {
+    animation: avatar_appear 1200ms cubic-bezier(0, 0, 0.2, 1) 800ms forwards
+  }
+
+  .ping_bezier {
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  .line_appear {
+    animation: line_appear 1000ms cubic-bezier(0, 1, 0, 1) 300ms forwards
+  }
+
+  .text_appear_right {
+    animation: text_appear 800ms ease-out 900ms forwards
+  }
+
+  .text_appear_left {
+    animation: text_appear_rev 800ms ease-out 900ms forwards
+  }
+
+  .arrow_appear_right {
+    animation: text_appear 800ms ease-out 1700ms forwards
+  }
+
+  .arrow_appear_left {
+    animation: text_appear_rev 800ms ease-out 1700ms forwards
+  }
+
+  .slash_appear_right {
+    animation: text_appear 800ms ease-out 1300ms forwards
+  }
+
+  @keyframes avatar_appear {
+    from {
+      transform: rotate3d(1, .5, .2, 90deg);
+      filter: blur(12px);
+      opacity: 0
+    }
+    to {
+      transform: rotate3d(0, 0, 0, 90deg);
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes line_appear {
+    from {
+      opacity: 0;
+      transform: translateY(-400px);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes text_appear {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes text_appear_rev {
+    from {
+      opacity: 0;
+      transform: translateX(20px);
+    }
+    
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+
+
+
 }
+
+@layer utilities {}
