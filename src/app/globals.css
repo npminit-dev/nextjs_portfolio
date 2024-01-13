@@ -4,10 +4,88 @@
 
 @layer components {
 
-  html {
-    @apply font-roboto;
+  /* navigation */
+  .icon_appear {
+    animation: menu_icon_appear 200ms ease-out forwards;
+  }
+
+  .text_white_shadow {
+    text-shadow: -2px -2px 5px white, -2px 2px 5px white, 2px -2px 5px white, 2px 2px 5px white;
+  }
+
+  .option_anim {
+    animation: option_appear 300ms ease-out forwards
+  }
+
+  .o_1 {
+    animation-delay: 50ms;
+  }
+
+  .o_2 {
+    animation-delay: 200ms;
+  }
+
+  .o_3 {
+    animation-delay: 350ms;
+  }
+
+  .o_4 {
+    animation-delay: 500ms;
+  }
+
+  .nav_appear {
+    animation: nav_appear 500ms ease-out forwards
+  }
+
+  .nav_disappear {
+    animation: nav_disappear 500ms ease-in forwards
+  }
+
+  @keyframes menu_icon_appear {
+    from {
+      filter: opacity(0);
+      transform: scale(.5)
+    }
+
+    to {
+      filter: opacity(1);
+      transform: scale(1)
+    }
+  }
+
+  @keyframes option_appear {
+    from {
+      opacity: 0;
+      transform: translateX(-15px)
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0)
+    }
+  }
+
+  @keyframes nav_appear {
+    from {
+      filter: opacity(0);
+      transform: translateY(-20px)
+    }
+
+    to {
+      filter: opacity(1);
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes nav_disappear {
+    from {
+      filter: opacity(1);
+      transform: translateY(0);
+    }
+
+    to {
+      filter: opacity(0);
+      transform: translateY(-20px)
+    }
   }
 }
-
-
-

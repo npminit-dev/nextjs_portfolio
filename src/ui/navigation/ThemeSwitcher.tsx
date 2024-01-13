@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { MdSunny } from "react-icons/md";
 import { IoMoonSharp } from "react-icons/io5";
-import { theme } from "@/typedefs/home";
+import { theme } from "@/typedefs/Nav_Types";
 
 export default function ThemeSwitcher() {
   const [theme, settheme] = useState<theme>(
@@ -20,12 +20,12 @@ export default function ThemeSwitcher() {
     settheme(theme === "light" ? "dark" : "light");
 
   return (
-    <div className="inline-block h-6 w-6 m-1 border-[1px] cursor-pointer antialiased">
+    <div className="inline-block h-6 w-6 m-1 cursor-pointer antialiased">
       <button onClick={handleThemeChange} className="h-[100%] w-[100%]">
         {theme === "dark" ? (
-          <IoMoonSharp className="h-[100%] w-[100%] text-blue-950"></IoMoonSharp>
+          <IoMoonSharp className="h-[100%] w-[100%] text-gray-50 icon_appear"></IoMoonSharp>
         ) : (
-          <MdSunny className="h-[100%] w-[100%] text-blue-950"></MdSunny>
+          <MdSunny className="h-[100%] w-[100%] text-yellow-500 icon_appear"></MdSunny>
         )}
       </button>
     </div>
