@@ -10,7 +10,7 @@ export default function MyCard() {
     <>
       <div className="h-8 w-screen bg-blue-300 relative"></div>
       <section
-        className="relative overflow-hidden w-screen h-fit py-12 md:py-20 bg-blue-300 flex flex-col md:flex-row items-center justify-center 
+        className="relative overflow-hidden w-screen h-fit py-12 md:py-48 bg-blue-300 flex flex-col md:flex-row items-center justify-center 
       bg-gradient-to-b from-blue-300 from-5% via-blue-100 via-50% to-blue-300 to-95%"
       >
         <div className="relative flex w-svw max-w-56 h-fit align-middle justify-center z-30 photo_appear opacity-0">

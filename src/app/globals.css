@@ -123,6 +123,14 @@
     animation: text_appear 800ms ease-out 1300ms forwards
   }
 
+  .home_section_app {
+    animation: home_section_appear 700ms ease-out forwards
+  }
+
+  .home_section_dis {
+    animation: home_section_disappear 700ms ease-out forwards
+  }
+
   @keyframes avatar_appear {
     from {
       transform: rotate3d(1, .5, .2, 90deg);
@@ -173,9 +181,27 @@
     }
   }
 
+  @keyframes home_section_appear {
+    from {
+      opacity: 0;
+      filter: grayscale(1) blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: grayscale(0) blur(0);
+    }
+  }
 
-
-
+  @keyframes home_section_disappear {
+    from {
+      opacity: 1;
+      filter: grayscale(0)
+    }
+    to {
+      opacity: 0;
+      filter: grayscale(1)
+    }
+  }
 }
 
 @layer utilities {}
