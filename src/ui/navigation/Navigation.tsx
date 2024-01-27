@@ -35,7 +35,7 @@ export default function Navigation() {
     clearTimeout(closeTimer.current);
     closeTimer.current = setTimeout(() => {
       hideNav(navRef.current, setburgerOpen);
-    }, 4000);
+    }, 3000);
   };
 
   const hideNav = (
@@ -59,7 +59,7 @@ export default function Navigation() {
         ref={navRef}
         className="fixed h-8 md:h-10 w-svw top-0 z-50 nav_appear"
       >
-        <div className="mr-4 pr-4 h-10 md:h-10 w-svw px-2 py-1 flex items-center justify-between bg-gradient-to-br from-blue-200 to-blue-300 shadow-sm shadow-gray-500">
+        <div className="mr-4 pr-4 h-10 md:h-10 w-svw px-2 py-1 flex items-center justify-between bg-gradient-to-br from-blue-200 to-blue-300 opacity-85 shadow-sm shadow-gray-500">
           <nav className="hidden pl-4 md:flex w-[100%] max-w-72 items-center justify-between z-50">
             <NavOptions></NavOptions>
           </nav>

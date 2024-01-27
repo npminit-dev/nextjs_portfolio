@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+svg:hover, path:hover {
+  cursor: pointer
+}
+
 @layer components {
 
   /* ------ NAV -------- */
@@ -92,7 +96,7 @@
   /* ----- HOME ----- */
 
   .photo_appear {
-    animation: avatar_appear 1200ms cubic-bezier(0, 0, 0.2, 1) 800ms forwards
+    animation: avatar_appear 1400ms cubic-bezier(0, 0, 0.2, 1) 1000ms forwards
   }
 
   .ping_bezier {

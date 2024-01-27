@@ -49,9 +49,9 @@ export default function MyCard() {
           <IoIosArrowForward className="h-7 w-7 md:h-9 md:w-9 arrow_appear_left opacity-0" />
         </div>
         <FaReact className="absolute -bottom-[100px] -right-[100px] md:h-[350px] md:w-[350px] h-[280px] w-[280px] text-blue-200/50 hover:scale-125 hover:text-[#00e3f738] hover:-rotate-45 duration-500"></FaReact>
-        <FaNodeJs className="absolute top-[8%] md:right-[30%] right-[10%] md:h-[75px] md:w-[75px] h-[60px] w-[60px] text-blue-200/50 hover:scale-125 hover:text-[#71b15649] duration-500"></FaNodeJs>
-        <SiTailwindcss className="absolute top-[10%] left-[10%] md:h-[75px] md:w-[75px] h-[60px] w-[60px] text-blue-200/50 hover:scale-125 hover:text-[#38bff880] duration-500"></SiTailwindcss>
-        <SiMongodb className="absolute bottom-[7%] left-[2%] h-[100px] w-[100px] text-blue-200/50 hover:scale-110 hover:text-[#11614944] duration-500"></SiMongodb>
+        <FaNodeJs className="absolute top-[8%] md:right-[30%] right-[10%] md:h-[125px] md:w-[125px] h-[60px] w-[60px] text-blue-200/50 hover:scale-125 hover:text-[#71b15649] duration-500"></FaNodeJs>
+        <SiTailwindcss className="absolute top-[10%] left-[10%] md:h-[100px] md:w-[100px] h-[60px] w-[60px] text-blue-200/50 hover:scale-125 hover:text-[#38bff880] duration-500"></SiTailwindcss>
+        <SiMongodb className="absolute bottom-[7%] left-[2%] h-[100px] w-[100px] md:h-[125px] md:w-[125px] text-blue-200/50 hover:scale-110 hover:text-[#11614944] duration-500"></SiMongodb>
       </section>
     </>
   );
