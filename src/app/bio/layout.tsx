@@ -1,7 +1,9 @@
+"use client"
+
 import { PropsWithChildren } from "react";
 
 export default function layout({ children }: PropsWithChildren) {
-  {
-    children;
-  }
+  return (
+    <>{ children }</>
+  )
 }
