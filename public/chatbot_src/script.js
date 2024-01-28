@@ -102,9 +102,9 @@ App.birth = function () {
     x = gridSpot.x, y = gridSpot.y;
 
   var particle = {
-    hue: 200,// + Math.floor(50*Math.random()),
-    sat: 95,//30 + Math.floor(70*Math.random()),
-    lum: 20 + Math.floor(40 * Math.random()),
+    hue: 126,// + Math.floor(50*Math.random()),
+    sat: 100,//30 + Math.floor(70*Math.random()),
+    lum: 27,
     x: x, y: y,
     xLast: x, yLast: y,
     xSpeed: 0, ySpeed: 0,
@@ -205,22 +205,18 @@ App.move = function () {
   }
 };
 App.initDraw = function () {
-  this.ctx.beginPath();
-  this.ctx.rect(0, 0, this.width, this.height);
-  this.ctx.fillStyle = 'black';
-  this.ctx.fill();
-  this.ctx.closePath();
+  this.ctx.clearRect(0, 0, this.width, this.height);
 };
 App.draw = function () {
   this.drawnInLastFrame = 0;
   if (!this.particles.length) return false;
 
-  this.ctx.beginPath();
-  this.ctx.rect(0, 0, this.width, this.height);
-  this.ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
-  //this.ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
-  this.ctx.fill();
-  this.ctx.closePath();
+  this.ctx.globalAlpha = 0.1; // fade rate
+  this.ctx.globalCompositeOperation = "destination-out" // fade out destination pixels
+  this.ctx.fillStyle = "black";
+  this.ctx.fillRect(0, 0, this.width, this.height);
+  this.ctx.globalAlpha = 1; // reset alpha
+  this.ctx.globalCompositeOperation = "source-over"
 
   for (var i = 0; i < this.particles.length; i++) {
     // Draw particle
@@ -228,7 +224,7 @@ App.draw = function () {
 
     var h, s, l, a;
 
-    h = p.hue + this.stepCount / 30;
+    h = p.hue;
     s = p.sat;
     l = p.lum;
     a = 1;

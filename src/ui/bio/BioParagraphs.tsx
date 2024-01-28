@@ -5,7 +5,7 @@ import Image from 'next/image'
 
 export default function BioParagraphs() {
   return (
-    <article className={`px-2 py-2 w-[100%] ${nunito.className} relative antialiased leading-tight md:px-8 md:py-8 z-40 flex flex-col items-center justify-between`}>
+    <article className={`px-2 py-2 w-[100%] ${nunito.className} relative antialiased leading-tight md:px-8 md:py-8 z-30 flex flex-col items-center justify-between`}>
       <h2 className="w-[100%] my-2 font-bold md:my-4 text-xl md:text-2xl text-center">A little about me...</h2>
       <p className="my-2 text-sm text-center md:my-4 md:max-w-[1000px] md:text-base">
         I have been a developer since 2019, where I started this path from university, there I learned the basics of computing (although I have liked computers and IT since I was a child), mathematical logic, computer architecture, applied technology, imperative programming , algorithms and data structures with C, OOP and design patterns with JAVA and relational databases with managers such as PostgreSQL.

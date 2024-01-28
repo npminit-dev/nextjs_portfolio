@@ -1,14 +1,12 @@
 "use client"
 
 import Bot from './Bot'
-import Prompt from './Prompt'
 
 export default function Chatbot() {
 
   return (
-    <section className='h-[400px] w-[100%] flex z-50'>
+    <section className='h-fit w-[100%] flex flex-col z-50 mt-32' id='chatbot'>
       <Bot></Bot>
-      <Prompt></Prompt>
     </section>
   )
 }

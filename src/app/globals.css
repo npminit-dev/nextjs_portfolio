@@ -6,11 +6,37 @@
   box-sizing: border-box;
 }
 
+.reduced-motion {
+  display: none;
+}
+
+@media (prefers-reduced-motion) {
+  .reduced-motion {
+    display: inline;
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
 svg:hover, path:hover {
   cursor: pointer
 }
 
+
 @layer components {
+
+  /* generics */
+
+  @keyframes appear {
+    from {
+      opacity: 0
+    }
+    to {
+      opacity: 1
+    }
+  }
 
   /* ------ NAV -------- */
   .icon_appear {
