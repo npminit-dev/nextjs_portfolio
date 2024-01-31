@@ -2,7 +2,7 @@
 
 import BioParagraphs from "@/ui/bio/BioParagraphs"
 import CV from "@/ui/bio/CV"
-import Chatbot from "@/ui/bio/Chatbot"
+import BotContainer from "@/ui/bio/BotContainer"
 
 // @ts-ignore
 export default function page() {
@@ -11,7 +11,7 @@ export default function page() {
       <div className="w-[100vw] h-fit bg-gradient-to-b from-indigo-200 from-5% via-indigo-100 via-50% to-indigo-200 to-95% bg-no-repeat bg-center bg-fixed" style={{ backgroundImage: 'url("data-science.png")' }}>
         <BioParagraphs></BioParagraphs>
         <CV></CV>
-        <Chatbot></Chatbot>
+        <BotContainer></BotContainer>
       </div>
     </section>
   )

@@ -1,6 +1,6 @@
 import { Nunito, Montserrat, Lato, Baskervville, Roboto, Raleway, Press_Start_2P } from "next/font/google";
 
-export const nunito = Nunito({ subsets: ["latin-ext"] });
+export const nunito = Nunito({ subsets: ["latin-ext"], weight: ['200', '300', '400', '500', '600'] });
 export const montserrat = Montserrat({ subsets: ["latin-ext"] });
 export const lato = Lato({
   subsets: ["latin-ext"],

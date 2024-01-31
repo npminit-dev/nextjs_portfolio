@@ -4,6 +4,7 @@ import MyCard from "@/ui/home/MyCard";
 import "./globals.css";
 import Navigation from "@/ui/navigation/Navigation";
 import { montserrat } from "@/utils/font_classes";
+import { AIContextProvider } from "@/contexts/AIContext";
 
 export default function RootLayout({
   children,
@@ -17,7 +18,9 @@ export default function RootLayout({
       >
         <Navigation></Navigation>
         <MyCard></MyCard>
-        {children}
+        <AIContextProvider>
+          {children}
+        </AIContextProvider>
         {/* <Footer></Footer> */}
       </body>
     </html>
