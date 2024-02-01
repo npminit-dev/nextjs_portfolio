@@ -24,7 +24,7 @@ export default function BotUIFace() {
   }
 
   const containerStyles: CSSProperties = {
-    animation: 'appear 3000ms ease-out 200ms forwards'
+    animation: 'appear 1000ms ease-out forwards'
   }
 
   return (

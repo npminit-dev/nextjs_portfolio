@@ -165,6 +165,10 @@ svg:hover, path:hover {
     animation: home_section_disappear 700ms ease-out forwards
   }
 
+  .img_normalized {
+    animation: normalize_img .7s forwards;
+  }
+
   @keyframes avatar_appear {
     from {
       transform: rotate3d(1, .5, .2, 90deg);
@@ -236,9 +240,20 @@ svg:hover, path:hover {
       filter: grayscale(1)
     }
   }
+
+  @keyframes normalize_img {
+    from {}
+    to {
+      transform: translate(0px, 0px);
+    }
+  }
 }
 
 /* BIO */
+
+.text_shadowed {
+  text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white;
+}
 
 .ia_text_appear {
   text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white;
@@ -254,4 +269,10 @@ svg:hover, path:hover {
   }
 }
 
-@layer utilities {}
+@layer utilities {
+
+  /* BIO */
+  .text_shadowed {
+    text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white;
+  }
+}

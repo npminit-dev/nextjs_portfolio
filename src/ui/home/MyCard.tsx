@@ -1,11 +1,44 @@
 "use client";
 
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { SiMongodb, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiMongodb, SiTailwindcss } from "react-icons/si";
 
 export default function MyCard() {
+
+  const [centeredImg, setCenteredImg] = useState(true)
+  const imgRef = useRef<HTMLImageElement>(null)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+
+    const containerWidth = containerRef.current?.offsetWidth || 200
+    const containerHeight = containerRef.current?.offsetHeight || 200
+
+    const mouseMoveHandler = (e: MouseEvent) => {
+      if (containerRef.current && imgRef.current) {
+        if (centeredImg) setCenteredImg(false)
+        const leftDistance = containerRef.current.getBoundingClientRect().left + window.scrollX
+        const topDistance = containerRef.current.getBoundingClientRect().top + window.scrollY
+        const X = (e.clientX - leftDistance - containerHeight / 2) * -0.1
+        const Y = (e.clientY - topDistance - containerWidth / 2) * -0.1
+        imgRef.current.style.transform = `translate(${X}px,${Y}px)`
+      }
+    }
+
+    const mouseLeaveHandler = () => setCenteredImg(true)
+
+    imgRef.current && imgRef.current.addEventListener('mousemove', mouseMoveHandler)
+    imgRef.current && imgRef.current.addEventListener('mouseleave', mouseLeaveHandler)
+
+    return () => {
+      containerRef.current && containerRef.current.removeEventListener('mousemove', mouseMoveHandler)
+      containerRef.current && containerRef.current.removeEventListener('mouseleave', mouseLeaveHandler)
+    }
+  }, [])
+
   return (
     <>
       <div className="h-8 w-screen bg-blue-300 relative"></div>
@@ -16,12 +49,16 @@ export default function MyCard() {
         <div className="relative flex w-svw max-w-56 h-fit align-middle justify-center z-30 photo_appear opacity-0">
           <div className="h-[140px] w-[140px] md:h-[190px] md:w-[190px] rounded-full overflow-hidden">
             <div className="absolute m-auto rounded-full border-2 h-[142px] w-[142px] md:h-[192px] md:w-[192px] border-blue-400 animate-[ping_1300ms_linear_3000ms_infinite] ping_bezier pointer-events-none z-10"></div>
-            <Image
-              alt="My cartooned photo"
-              src="/avatar_small.webp"
-              width={190}
-              height={190}
-            ></Image>
+            <div className="h-full w-full rounded-full bg-slate-950 cursor-pointer" ref={containerRef}>
+              <Image
+                className={`${centeredImg ? 'img_normalized' : ''}`}
+                alt="My cartooned photo"
+                src="/avatar_small.webp"
+                width={200}
+                height={200}
+                ref={imgRef}
+              ></Image>
+            </div>
           </div>
         </div>
         <div className="h-28 w-96 flex items-center justify-center select-none z-30 pointer-events-none">

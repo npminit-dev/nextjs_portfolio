@@ -2,6 +2,6 @@
 
 import { PropsWithChildren } from "react";
 
-export default function layout({ children }: PropsWithChildren) {
+export default function ProjectsLayout({ children }: PropsWithChildren) {
   return <div>{children}</div>;
 }

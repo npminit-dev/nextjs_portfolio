@@ -3,6 +3,14 @@ import million from "million/compiler";
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: false,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+      }
+    ]
+  }
 };
 
 const millionConfig = {
