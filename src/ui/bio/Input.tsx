@@ -14,7 +14,7 @@ export default function Input({ loading, setloading, setprompt }: InputProps) {
   }
 
   return (
-    <div className="h-64 w-[100%] relative my-8">
+    <div className="h-fit w-[100%] relative my-8">
       <form onSubmit={handleSubmit} className="flex flex-col items-center justify-between">
         <textarea
           maxLength={200} minLength={10}

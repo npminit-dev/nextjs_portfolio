@@ -33,7 +33,7 @@ export default function BotUIFace() {
         <div className="rounded-sm overflow-hidden relative h-min w-[100%] flex flex-col items-center justify-center z-30">
           <iframe
             title='AI bot background image'
-            className="border-black w-[1200px] h-[400px] bg-transparent duration-500"
+            className="border-black md:w-[1200px] md:h-[400px] w-[800px] h-[300px] bg-transparent duration-500"
             src={'chatbot_src/index.html'}
             style={iframeStyles}
           ></iframe>

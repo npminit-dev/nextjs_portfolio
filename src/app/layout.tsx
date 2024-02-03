@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`h-[200vh] ${montserrat.className} md:overflow-x-hidden`}
+        className={`h-fit w-[100dvw] ${montserrat.className} md:overflow-x-hidden`}
       >
         <Navigation></Navigation>
         <MyCard></MyCard>
