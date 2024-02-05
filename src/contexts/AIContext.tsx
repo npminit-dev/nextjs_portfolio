@@ -35,7 +35,7 @@ export function AIContextProvider({ children }: PropsWithChildren) {
           setresponse('Connecting AI, creating thread')
           const newthread = await client.beta.threads.create()
           setthread(newthread)
-          setresponse('Connection successfull, ready to respond')
+          setresponse('Awaiting prompts')
           setloading(false)
         } else {
           setresponse('error: cannot create OpenAI client')

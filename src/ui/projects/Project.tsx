@@ -23,7 +23,7 @@ export default function Project({
       {
         viewed ?
         <article className={`relative flex flex-col items-center justify-center my-2 p-4 h-fit w-[100%] md:min-w-[200px] md:max-w-[400px] md:h-[300px] rounded-xl 
-          bg-gradient-to-tr from-cyan-400/60 from-1% via-cyan-100/60 via-50% to-cyan-400/60 to-99% hover:scale-[101%] 
+          bg-gradient-to-tr from-green-400/60 from-1% via-green-100/60 via-50% to-green-400/60 to-99% hover:scale-[101%] 
           hover:shadow-md duration-150 cursor-pointer border-[1px] border-slate-500/50 ${montserrat.className}`}>
           <header className="leading-none text-center">
             <h2 className="text-base font-semibold md:text-xl">{ name }</h2>

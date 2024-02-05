@@ -269,10 +269,25 @@ svg:hover, path:hover {
   }
 }
 
+
+/* CONTACT */
+
+#Contact-box:hover > #Contact-background {
+  left: 0;
+}
+
+#Contact-background {
+  transition-timing-function: cubic-bezier(.06,.96,.52,1);
+}
+
+
+
 @layer utilities {
 
   /* BIO */
   .text_shadowed {
     text-shadow: 1px 1px 2px white, -1px 1px 2px white, 1px -1px 2px white, -1px -1px 2px white;
   }
+
+
 }
