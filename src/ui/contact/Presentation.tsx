@@ -7,6 +7,12 @@ export default function Presentation() {
       <p className="my-2 text-sm text-center md:my-4 md:max-w-[1000px] md:text-base leading-tight md:leading-normal">
         Here are my contact channels to talk to me and my profiles on different platforms. Contact me with just 1 click.
       </p>
+      <p className="my-2 text-sm text-center md:my-4 md:max-w-[1000px] md:text-base leading-tight md:leading-normal">
+        I am available from Monday to Saturday from 10 am to 8 pm, if I am busy it takes a maximum of 12 hours to respond.
+      </p>
+      <p className="my-2 text-sm text-center md:my-4 md:max-w-[1000px] md:text-base leading-tight md:leading-normal">
+      Contact me on any of my channels and arrange a meeting.
+      </p>
     </article>
   )
 }

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navigation from "@/ui/navigation/Navigation";
 import { montserrat } from "@/utils/font_classes";
 import { AIContextProvider } from "@/contexts/AIContext";
+import Footer from "@/ui/Footer";
 
 export default function RootLayout({
   children,
@@ -21,7 +22,7 @@ export default function RootLayout({
         <AIContextProvider>
           {children}
         </AIContextProvider>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </body>
     </html>
   );

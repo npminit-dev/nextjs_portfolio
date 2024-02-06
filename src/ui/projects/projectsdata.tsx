@@ -39,7 +39,6 @@ export const projectsdata: ProjectProps[] = [
     info: 'App para controlar el consumo diario de calorías',
     cover: 'https://i.ibb.co/8cXYDbL/Daily-Fuel.webp',
     thumbnail: 'https://i.ibb.co/cvkzHCr/Daily-Fuel-tn.webp',
-    link: '#',
     tecs: ['React Native', 'Expo Go'],
     repo: 'https://github.com/npminit-dev/DailyFuel.git'
   },

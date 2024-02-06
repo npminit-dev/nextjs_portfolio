@@ -5,7 +5,7 @@ export type ProjectProps = {
   info: string;
   cover: string;
   thumbnail: string;
-  link: string;
+  link?: string;
   tecs: Array<ReactNode|string|undefined>;
   repo?: string;
 }

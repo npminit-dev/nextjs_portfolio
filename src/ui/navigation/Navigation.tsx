@@ -84,7 +84,7 @@ export default function Navigation() {
       <nav
         ref={floatingMenuRef}
         onClick={() => setburgerOpen(false)}
-        className={`md:hidden shadow-sm shadow-gray-500 fixed flex flex-col items-start justify-around px-2 w-svw h-fit left-0 bg-blue-200 duration-200 ease-in-out transition-all z-40 ${
+        className={`md:hidden shadow-sm shadow-gray-500 fixed flex flex-col items-start justify-around px-2 w-svw h-fit left-0 bg-blue-200/90 duration-200 ease-in-out transition-all z-40 ${
           burgerOpen ? "flex top-10" : "top-[-184px]"
         }`}
       >

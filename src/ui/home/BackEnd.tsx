@@ -39,7 +39,7 @@ export default function BackEnd() {
             >
               
               Consumption of APIs from the client side, and knowledge and construction of REST APIs based on NodeJS and Express. 
-              Use of Typescript and Zod for validations. Jest to verify the correct operation of the endpoints.
+              Typescript usage. Postman, ThunderClient and Rest-Client to verify the correct operation of the endpoints.
             </p>
           </div>
           <div className="relative order-1 md:order-2 h-[100%] w-[100%] flex items-center justify-center bg-gradient-to-tl from-purple-200 to-purple-100 self-center justify-self-center">
