@@ -2,7 +2,6 @@
 
 import Contact from "@/ui/contact/Contact";
 import Presentation from "@/ui/contact/Presentation";
-import { FaDiscord } from "react-icons/fa";
 import { contactData } from "@/ui/contact/ContactData"; 
 import { v4 } from "uuid";
 
@@ -19,8 +18,7 @@ export default function page() {
                 title={data.name} 
                 description={data.description}
                 url={data.url}
-                children={data.icon}  
-              ></Contact>
+              >{ data.icon }</Contact>
             ))
           }
         </div>
