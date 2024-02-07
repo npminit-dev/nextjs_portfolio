@@ -57,7 +57,8 @@ export default function MyCard() {
                 src="/avatar_small.webp"
                 width={200}
                 height={200}
-                ref={imgRef}
+                ref={imgRef} 
+                priority={true}
               ></Image>
             </div>
           </div>

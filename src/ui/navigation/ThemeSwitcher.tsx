@@ -25,7 +25,7 @@ export default function ThemeSwitcher() {
 
   return (
     <div className="inline-block h-6 w-6 m-1 cursor-pointer antialiased">
-      <button onClick={handleThemeChange} className="h-[100%] w-[100%]">
+      <button onClick={handleThemeChange} aria-label="Button to switch the color theme of the page" className="h-[100%] w-[100%]">
         {theme === "dark" ? (
           <IoMoonSharp className="h-[100%] w-[100%] text-gray-50 icon_appear"></IoMoonSharp>
         ) : (
