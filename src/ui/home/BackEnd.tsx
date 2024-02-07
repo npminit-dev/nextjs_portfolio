@@ -27,14 +27,14 @@ export default function BackEnd() {
           <div className="relative order-2 md:order-1 flex w-[100%] h-[100%] flex-col items-center justify-center self-center justify-self-center overflow-hidden px-4 md:max-w-[500px]">
             <h3
               className={
-                `text-center mb-2 p-0 md:px-4 text-base/4 md:text-2xl font-bold text-slate-950 antialiased ${raleway.className}`
+                `text-center mb-2 p-0 sm:px-2 md:px-4 text-base/4 sm:text-xl md:text-2xl font-bold text-slate-950 antialiased ${raleway.className}`
               }
             >
               Intuitive, flexible and robust APIs
             </h3>
             <p
               className={
-                `mt-0 text-center text-sm/4 md:text-base max-h-[200px] text-slate-950 antiliased ${raleway.className}`
+                `mt-0 text-center text-sm/4 sm:text-sm md:text-base max-h-[200px] text-slate-950 antiliased ${raleway.className}`
               }
             >
               

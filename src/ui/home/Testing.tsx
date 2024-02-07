@@ -31,14 +31,14 @@ export default function Testing() {
           <div className="relative order-2 md:order-1 flex w-[100%] h-[100%] flex-col items-center justify-center self-center justify-self-center overflow-hidden px-4 md:max-w-[500px]">
             <h3
               className={
-                `text-center mb-2 p-0 md:px-4 text-base/4 md:text-2xl font-bold text-slate-950 antialiased ${raleway.className}`
+                `text-center mb-2 p-0 sm:px-2 md:px-4 text-base/4 sm:text-xl md:text-2xl font-bold text-slate-950 antialiased ${raleway.className}`
               }
             >
               End to end testing
             </h3>
             <p
               className={
-                `mt-0 text-center text-sm/4 md:text-base max-h-[200px] text-slate-950 antiliased ${raleway.className}`
+                `mt-0 text-center text-sm/4 sm:text-sm md:text-base max-h-[200px] text-slate-950 antiliased ${raleway.className}`
               }
             >
               Knowledge of unit testing, module integration and end-to-end testing with Jest, Jest-Dom and Cypress.
@@ -48,7 +48,7 @@ export default function Testing() {
             <div className="absolute h-[100%] w-[500px]">
               <GiJesterHat className="absolute h-[150px] w-[150px] md:h-[200px] md:w-[200px] m-auto inset-0 text-amber-300 hover:scale-105 duration-300" />
               <PiTestTubeFill className="absolute h-[60px] w-[60px] md:h-[110px] md:w-[110px] m-auto right-[30%] bottom-8 md:right-[18%] md:bottom-[20%] z-[25] text-amber-400 hover:scale-105 duration-300" />
-              <IoIosSpeedometer className="absolute h-[75px] w-[75px] md:h-[80px] md:w-[80px] m-auto left-[32%] bottom-12 md:left-[24%] md:bottom-[20%] z-[22] text-amber-400 hover:scale-105 duration-300" />
+              <IoIosSpeedometer className="absolute h-[70px] w-[70px] md:h-[80px] md:w-[80px] m-auto left-[28%] bottom-9 md:left-[24%] md:bottom-[20%] z-[22] text-amber-400 hover:scale-105 duration-300" />
               <MdIntegrationInstructions className="absolute h-[30px] w-[30px] md:h-[65px] md:w-[65px] m-auto top-12 right-24 md:top-12 md:right-14 z-[22] text-amber-300 hover:scale-105 duration-300" />
               <RiSoundModuleFill className="absolute h-[45px] w-[45px] md:h-[80px] md:w-[80px] m-auto top-12 left-24 md:top-12 md:left-14 z-[22] text-amber-300 hover:scale-105 duration-300" />
             </div>

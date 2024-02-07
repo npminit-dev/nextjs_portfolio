@@ -47,6 +47,10 @@ svg:hover, path:hover {
     text-shadow: -2px -2px 5px white, -2px 2px 5px white, 2px -2px 5px white, 2px 2px 5px white;
   }
 
+  .text_dark_shadow {
+    text-shadow: -1px -1px 3px #cccccc57, -1px 1px 3px #cccccc57, 1px -1px 3px #cccccc57, 1px 1px 3px #cccccc57;
+  }
+
   .option_anim {
     animation: option_appear 300ms ease-out forwards
   }

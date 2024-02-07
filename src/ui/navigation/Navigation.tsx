@@ -59,15 +59,15 @@ export default function Navigation() {
         ref={navRef}
         className="fixed h-8 md:h-10 w-svw top-0 z-50 nav_appear"
       >
-        <div className="mr-4 pr-4 h-10 md:h-10 w-svw px-2 py-1 flex items-center justify-between bg-gradient-to-br from-blue-200 to-blue-300 opacity-85 shadow-sm shadow-gray-500">
+        <div className="mr-4 pr-4 h-10 md:h-10 w-svw px-2 py-1 flex items-center justify-between bg-gradient-to-br from-blue-200 to-blue-300 opacity-95 shadow-sm dark:from-blue-800 dark:to-blue-950 shadow-gray-500 dark:shadow-none">
           <nav className="hidden pl-4 md:flex w-[100%] max-w-72 items-center justify-between z-50">
             <NavOptions></NavOptions>
           </nav>
           <label className="md:hidden h-6 w-6 cursor-pointer select-none z-50">
             {burgerOpen ? (
-              <MdClose className="relative h-[100%] w-[100%] z-50 icon_appear"></MdClose>
+              <MdClose className="relative h-[100%] w-[100%] z-50 icon_appear dark:text-slate-200"></MdClose>
             ) : (
-              <FiMenu className="relative h-[100%] w-[100%] z-50 icon_appear"></FiMenu>
+              <FiMenu className="relative h-[100%] w-[100%] z-50 icon_appear dark:text-slate-200"></FiMenu>
             )}
             <input
               type="checkbox"
@@ -84,7 +84,7 @@ export default function Navigation() {
       <nav
         ref={floatingMenuRef}
         onClick={() => setburgerOpen(false)}
-        className={`md:hidden shadow-sm shadow-gray-500 fixed flex flex-col items-start justify-around px-2 w-svw h-fit left-0 bg-blue-200/90 duration-200 ease-in-out transition-all z-40 ${
+        className={`md:hidden shadow-sm shadow-gray-500 fixed flex flex-col items-start justify-around px-2 w-svw h-fit left-0 bg-blue-200/90 dark:bg-blue-900/90 duration-200 ease-in-out transition-all z-40 ${
           burgerOpen ? "flex top-10" : "top-[-184px]"
         }`}
       >
