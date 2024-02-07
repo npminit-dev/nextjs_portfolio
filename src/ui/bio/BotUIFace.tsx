@@ -32,12 +32,15 @@ export default function BotUIFace() {
       {viewed &&
         <div className="rounded-sm overflow-hidden relative h-min w-[100%] antialiased z-30">
           <span className="h-full w-full flex flex-col items-center justify-center md:scale-100 scale-[80%]">
-            <iframe
-              title='AI bot background image'
-              className="border-black w-[1200px] h-[400px] bg-transparent duration-500"
-              src={'chatbot_src/index.html'}
-              style={iframeStyles}
-            ></iframe>
+            <span className="h-fit w-fit dark:hue-rotate-60">
+              <iframe
+                title='AI bot background image'
+                className="border-black w-[1200px] h-[400px] bg-transparent duration-500"
+                src={'chatbot_src/index.html'}
+                style={iframeStyles}
+                allowTransparency={true}
+              ></iframe>
+            </span>
             <Output {...{ loading, setloading, response, setresponse, prompt, setprompt }}></Output>
           </span>
         </div>

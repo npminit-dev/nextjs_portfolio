@@ -65,10 +65,10 @@ export default function Output({ loading, setloading, prompt, setprompt }: Outpu
   return (
     <>
       <div className="absolute h-fit w-fit shadow-sm rounded-full duration-500 bg-[url(/chatgptbackground.webp)] bg-no-repeat bg-center bg-cover z-20" style={outputStyles}>
-        <div className='h-[300px] w-[300px] rounded-full duration-500 bg-[#008b10]/40 z-30'></div>
+        <div className='h-[300px] w-[300px] rounded-full duration-500 bg-[#008b10]/30 dark:bg-indigo-800/20 z-30'></div>
       </div>
       <p
-        className={`absolute h-[300px] w-[350px] text-center flex items-center justify-center z-50 font-semibold text-slate-950 text-[17px] overflow-auto animate-none ia_text_appear leading-tight ${nunito.className}`}
+        className={`absolute h-[300px] w-[350px] text-center flex items-center justify-center z-50 font-semibold text-slate-950 text_shadowed dark:text_shadowed text-[17px] overflow-auto animate-none ia_text_appear leading-tight ${nunito.className}`}
         ref={responseRef}
       >
         { response && response }</p>

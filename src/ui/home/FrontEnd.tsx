@@ -25,20 +25,20 @@ export default function FrontEnd() {
   }, [inView])
 
   return (
-    <article className="h-fit min-h-96 w-screen bg-sky-200">
+    <article className="h-fit min-h-96 w-screen bg-sky-200 dark:bg-sky-800">
       <span className="relative h-[100%] w-[100%] opacity-0" ref={ref}>
         <div className="relative grid h-[500px] md:h-[400px] w-[100%] grid-cols-none grid-rows-2 items-center justify-center md:grid-cols-2 md:grid-rows-none overflow-hidden">
           <div className="relative order-2 flex w-[100%] h-[100%] flex-col items-center justify-center self-center justify-self-center overflow-hidden px-4 md:max-w-[500px]">
             <h3
               className={
-                `text-center mb-2 p-0 sm:px-2 md:px-4 text-base/4 sm:text-xl md:text-2xl font-bold text-slate-950 antialiased ${raleway.className}`
+                `text-center mb-2 p-0 sm:px-2 md:px-4 text-base/4 sm:text-xl md:text-2xl font-bold text-slate-950 dark:text-slate-300 antialiased ${raleway.className}`
               }
             >
               Modern, accessible and responsive UI`s
             </h3>
             <p
               className={
-                `mt-0 text-center text-sm/4 sm:text-sm md:text-base max-h-[200px] text-slate-950 antiliased ${raleway.className}`
+                `mt-0 text-center text-sm/4 sm:text-sm md:text-base max-h-[200px] text-slate-950 dark:text-slate-300 antiliased ${raleway.className}`
               }
             >
               Building modern and friendly websites thanks to different frameworks
@@ -48,7 +48,7 @@ export default function FrontEnd() {
               preprocessors, and more...
             </p>
           </div>
-          <div className="relative order-1 h-[100%] w-[100%] flex items-center justify-center bg-gradient-to-tl from-sky-200 to-sky-100 self-center justify-self-center">
+          <div className="relative order-1 h-[100%] w-[100%] flex items-center justify-center bg-gradient-to-tl from-sky-200 to-sky-100 dark:from-sky-900 dark:to-sky-800 self-center justify-self-center">
             <div className="absolute h-[100%] w-[500px]">
               <PiMonitorFill className="absolute h-[150px] w-[150px] md:h-[200px] md:w-[200px] m-auto inset-0 text-sky-300 hover:scale-105 duration-300" />
               <IoIosPhonePortrait className="absolute h-[60px] w-[60px] md:h-[110px] md:w-[110px] m-auto left-[32%] bottom-12 md:left-[21%] md:bottom-[20%] z-[25] text-sky-400 hover:scale-105 duration-300" />

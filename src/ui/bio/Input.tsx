@@ -19,14 +19,14 @@ export default function Input({ loading, setloading, setprompt }: InputProps) {
         <textarea
           maxLength={200} minLength={10}
           required disabled={ loading ? true : false }
-          className="h-24 md:h-36 w-[100%] text-sm md:text-base max-w-80 p-4 my-4 rounded-md border-[1px] shadow-sm focus:shadow-sky-400 focus:scale-105 outline-none bg-slate-200/50 resize-none duration-200" 
+          className="h-24 md:h-36 w-[100%] text-sm md:text-base max-w-80 p-4 my-4 rounded-md border-[1px] shadow-sm focus:shadow-sky-400 focus:scale-[102%] outline-none bg-slate-200/50 dark:bg-slate-900/50 dark:text-slate-300 resize-none duration-200" 
           placeholder="What is your favorite food?"
           onChange={({ currentTarget }) => setvalue(currentTarget.value)}
         ></textarea>
         <button 
           disabled={loading ? true : false}
           type="submit"
-          className={`px-2 py-1 my-1 border-[1px] shadow-sm hover:shadow-sky-400 hover:scale-105 bg-slate-200/50 rounded-md focus:outline-none font-semibold outline-none duration-200 ${montserrat.className}`}  
+          className={`px-2 py-1 my-1 border-[1px] shadow-sm hover:shadow-sky-400 hover:scale-[102%] bg-slate-200/50 dark:bg-slate-800/50 dark:text-slate-300 rounded-md focus:outline-none font-semibold outline-none duration-200 ${montserrat.className}`}  
         >submit</button>
       </form>
     </div>
