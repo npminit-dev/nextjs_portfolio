@@ -38,7 +38,6 @@ export default function BotUIFace() {
                 className="border-black w-[1200px] h-[400px] bg-transparent duration-500"
                 src={'chatbot_src/index.html'}
                 style={iframeStyles}
-                allowTransparency={true}
               ></iframe>
             </span>
             <Output {...{ loading, setloading, response, setresponse, prompt, setprompt }}></Output>

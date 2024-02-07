@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+iframe {
+  background-color: transparent;
+}
+
 .reduced-motion {
   display: none;
 }

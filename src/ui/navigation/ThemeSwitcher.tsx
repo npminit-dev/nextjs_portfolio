@@ -6,14 +6,18 @@ import { IoMoonSharp } from "react-icons/io5";
 import { theme } from "@/typedefs/Nav_Types";
 
 export default function ThemeSwitcher() {
-  const [theme, settheme] = useState<theme>(
-    (localStorage.getItem("theme") as theme) || "light"
-  );
+  const [theme, settheme] = useState<theme>('light');
 
   useEffect(() => {
-    localStorage.setItem("theme", theme);
-    if (theme === "light") document.documentElement.classList.remove("dark");
-    else document.documentElement.classList.add("dark");
+    let localTheme = localStorage.getItem('theme')
+    if(!localTheme) localStorage.setItem('theme', theme)
+    else settheme(localTheme as theme)
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+    if(theme === 'light') document.documentElement.classList.remove('dark')
+    else document.documentElement.classList.add('dark')
   }, [theme]);
 
   const handleThemeChange = () =>
