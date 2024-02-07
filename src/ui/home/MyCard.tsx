@@ -45,7 +45,7 @@ export default function MyCard() {
       <section
         className="relative overflow-hidden w-screen h-fit py-12 md:py-48 bg-blue-300 flex flex-col md:flex-row items-center justify-center 
         bg-gradient-to-b from-blue-300 from-5% via-blue-100 via-50% to-blue-300 to-95% 
-        dark:from-blue-900 dark:via-blue-700 dark:to-blue-900 z-30"
+        dark:from-blue-900 dark:via-blue-700 dark:to-blue-900 z-20"
       >
         <div className="relative flex w-svw max-w-56 h-fit align-middle justify-center z-30 photo_appear opacity-0">
           <div className="h-[140px] w-[140px] md:h-[190px] md:w-[190px] rounded-full overflow-hidden">
