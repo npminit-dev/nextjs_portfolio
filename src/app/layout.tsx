@@ -6,7 +6,7 @@ import Navigation from "@/ui/navigation/Navigation";
 import { montserrat } from "@/utils/font_classes";
 import { AIContextProvider } from "@/contexts/AIContext";
 import Footer from "@/ui/Footer";
-import { Head } from "next/document";
+import Head from "next/head";
 
 export default function RootLayout({
   children,
