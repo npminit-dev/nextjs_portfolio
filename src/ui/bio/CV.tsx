@@ -14,7 +14,7 @@ export default function CV() {
       <a 
         className="h-16 w-48 md:h-20 md:w-52 pl-4 rounded-md grid grid-cols-2 cursor-pointer bg-indigo-100/75 dark:bg-slate-700/50 shadow-sm hover:shadow-md 
         hover:bg-indigo-100 hover:dark:bg-indigo-700/50 dark:border-[1px] dark:border-slate-300 hover:scale-[102%] duration-200"
-        onClick={() => router.push('/Jorge_Antonio_Balsamo_Nuevo.pdf')}
+        onClick={() => router.push('/JorgeAntonioBalsamoResumeEnglish.pdf')}
       >
         <span className='self-center justify-self-center text-center text-sm md:text-normal dark:text-slate-300'>Look at my CV</span>
         <BsFileEarmarkPdfFill className='self-center justify-self-center text-red-800 dark:text-red-600 h-8 w-8 md:h-10 md:w-10'></BsFileEarmarkPdfFill>
@@ -23,8 +23,8 @@ export default function CV() {
       <a 
         className="h-16 w-48 md:h-20 md:w-52 pl-4 rounded-md grid grid-cols-2 cursor-pointer bg-indigo-100/75 dark:bg-slate-700/50 shadow-sm hover:shadow-md 
         hover:bg-indigo-100 hover:dark:bg-indigo-700/50 dark:border-[1px] dark:border-slate-300 hover:scale-[102%] duration-200"
-        href={'/Jorge_Antonio_Balsamo_Nuevo.pdf'} 
-        download={'JorgeBalsamoCV.pdf'} 
+        href={'JorgeAntonioBalsamoResumeEnglish.pdf'} 
+        download={'JorgeAntonioBalsamoResumeEnglish.pdf'} 
       >
         <span className='self-center justify-self-center text-center text-sm md:text-normal dark:text-slate-300'>just download it</span>
         <FaDownload className='self-center justify-self-center text-slate-950 dark:text-slate-300 h-8 w-8 md:h-10 md:w-10'></FaDownload>

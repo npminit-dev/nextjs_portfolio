@@ -13,7 +13,7 @@ export const projectsdata: ProjectProps[] = [
     info: 'Web de libros con React/TS/Ant-Design (prueba tecnica de @midudev)',
     cover: 'https://i.ibb.co/T1CX7Ln/Book-Nexus.webp',
     thumbnail: 'https://i.ibb.co/J245vDK/Book-Nexus-tn.webp',
-    link: 'https://dreamy-vacherin-eba168.netlify.app/',
+    link: 'https://booknexus.netlify.app',
     tecs: ['HTML5', 'CSS3', 'React', 'TypeScript', 'Ant-Design', 'Jest'],
     repo: 'https://github.com/npminit-dev/npminit-dev.git'
   },
@@ -23,14 +23,14 @@ export const projectsdata: ProjectProps[] = [
     cover: 'https://i.ibb.co/b1320qy/ByteBlog.webp',
     thumbnail: 'https://i.ibb.co/wcBVs19/Byte-Blog-tn.webp',
     link: 'https://byteblog.adaptable.app',
-    tecs: ['HTML5', 'CSS3', 'React', 'Typescript', 'NodeJS', 'MongoDB']
+    tecs: ['HTML5', 'CSS3', 'React', 'Typescript', 'NodeJS', 'MongoDB'],
+    repo: 'https://github.com/npminit-dev/ByteBlog.git'
   },
   {
     name: 'Nasa APOD',
     info: 'App de las fotos astronómicas de los ultimos 6 dias, usando la API NASA-APOD',
     cover: 'https://i.ibb.co/2vgyjxY/Nasa-App.webp',
     thumbnail: 'https://i.ibb.co/S6yYbWs/Nasa-App-tn.webp',
-    link: '#',
     tecs: ['TypeScript', 'React Native', 'Jest'],
     repo: 'https://github.com/npminit-dev/NASA-App.git'
   },
