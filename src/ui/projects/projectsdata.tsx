@@ -9,6 +9,31 @@ import { v4 as uuid } from 'uuid'
 
 export const projectsdata: ProjectProps[] = [
   {
+    name: 'NutriDash',
+    info: 'Aplicacion movil de nutrición (en desarrollo)',
+    tecs: ['React Native', 'Expo Go', 'React', 'TypeScript', 'NodeJS'],
+    thumbnail: 'https://i.ibb.co/rvLr3dL/Nutri-Dash-tn.webp',
+    cover: 'https://i.ibb.co/WFXbS0P/Nutri-Dash-Sample-lite.gif'
+  },
+  {
+    name: 'Savory Haven',
+    info: 'Boost Software prueba tecnica',
+    link: 'https://31d65be2.savoryhaven.pages.dev/',
+    tecs: ['HTML', 'CSS3', 'React', 'TypeScript', 'Jest'],
+    repo: 'https://github.com/npminit-dev/boostss_prueba_tecnica.git',
+    thumbnail: 'https://i.ibb.co/kXQJfCH/Savory-Haven-tn.webp',
+    cover: 'https://i.ibb.co/52Pvd5S/Savory-Haven.webp'
+  },
+  {
+    name: 'SecAndSys',
+    info: 'Security And System prueba tecnica',
+    link: 'https://sec-sys-tecnical-test.vercel.app/',
+    tecs: ['HTML', 'CSS3', 'React', 'TypeScript', 'Jest'],
+    repo: 'https://github.com/npminit-dev/Sec-SysTecnicalTest.git',
+    thumbnail: 'https://i.ibb.co/jT4NFqD/Sec-And-Sys-tn.webp',
+    cover: 'https://i.ibb.co/w05FWBt/Sec-And-Sys.webp'
+  },
+  {
     name: 'BookNexus',
     info: 'Web de libros con React/TS/Ant-Design (prueba tecnica de @midudev)',
     cover: 'https://i.ibb.co/T1CX7Ln/Book-Nexus.webp',

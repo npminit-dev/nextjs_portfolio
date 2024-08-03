@@ -30,14 +30,14 @@ export default function Project({
             <h2 className="text-base font-semibold md:text-xl dark:text-slate-300">{ name }</h2>
             <sub className='leading-[2px] text-slate-950/80 md:text-sm dark:text-slate-300'>{ info }</sub>
           </header>
-          <div className="relative h-[100px] w-[100px] rounded-md overflow-hidden border-1 border-slate-700 my-4">
+          <div className="relative h-[100px] w-[100px] rounded-md overflow-hidden border-1 border-slate-700 my-4 object-cover">
             <Image
               className=""
               src={thumbnail}
-              fill={true}
               alt={`Project ${name} image`}
               title="Open image in a new tab"
-              sizes="max-width(768px) 100, min-width(768px) 200"
+              height={200}
+              width={200}
               onClick={linkOnNewTab(cover)}
             ></Image>   
           </div>
